@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendors/FontAwesome/all.css">
+
+    <link rel="stylesheet" href="./assets/vendors/CryptoFonts/cryptocoins.css">
+    <!-- <link rel="stylesheet" href="app.css"> -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <!-- 09374337443 merati -->
+    <!-- begin::navbar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="text-white d-block d-md-none toggle-menu">
+                <i class="fas fa-bars"></i>
+            </a>
+            <span>
+                <img class="logo" src="./assets/images/logo-wallex-v2.svg" alt="logo">
+            </span>
+            <div class="ml-auto d-none d-md-flex">
+                <div class="market-base-select">
+                    <h3 href="#">پایه بازار </h3>
+                    <div>
+                        <a href="#">ریال</a>
+                        <a href="#">USDT</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-warning btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        بازار
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#"><i class="cc BTC" title="BTC"></i> BTC-Rial</a>
+                        <a class="dropdown-item" href="#"><i class="cc ETH" title="ETH"></i> ETH-Rial</a>
+                        <a class="dropdown-item" href="#"><i class="cc BCH" title="BCH"></i> BCH-Rial</a>
+                        <a class="dropdown-item" href="#"><i class="cc LTC" title="LTC"></i> LTC-Rial</a>
+                        <a class="dropdown-item" href="#"><i class="cc DASH" title="DASH"></i> DASH-Rial</a>
+                        <a class="dropdown-item" href="#"><i class="cc USDT" title="USDT"></i> USDT-Rial</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-custom-menu d-none d-md-block">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-comments"></i>
+                            پشتیبانی
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-bell"></i>
+
+                        </a>
+                        <span class="notif-count">1</span>
+                    </li>
+                    <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                    <li><a href="#" class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
+                        <div class="dropdown-menu profile" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">
+                                <span><i class="fas fa-user fa-2x ml-2"></i></span>
+                                <div class="profile-details">
+                                    <span>info@novinnet.com</span>
+                                    <span>شهرام پیوندی</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <span><i class="fas fa-sign-out-alt fa-2x ml-2"></i></span>
+                                <div>
+                                    <span>خروج</span>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- end::navbar -->
+
+    <!-- begin::sidebar -->
+    <aside class="main-sidebar">
+        <ul class="sidebar-menu">
+            <li class="m-base-select">
+                <h3 href="#">پایه بازار </h3>
+                <div>
+                    <a href="#">ریال</a>
+                    <a href="#">USDT</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./assets/images/1.png" width="25px" height="25px" alt="">
+                    <span>داشبورد</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./assets/images/2.png" width="25px" height="25px" alt="">
+                    <span>کیف پول</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+
+                </a>
+            </li>
+            <li><a href="#">
+                    <img src="./assets/images/3.png" width="25px" height="25px" alt="">
+                    <span>سفارشات من</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+
+                </a></li>
+            <li><a href="#">
+                    <img src="./assets/images/4.png" width="25px" height="25px" alt="">
+                    <span>تاریخچه های من</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+
+                </a>
+            </li>
+            <li><a href="#">
+                    <img src="./assets/images/1.png" width="25px" height="25px" alt="">
+                    <span>دوستان من</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+
+                </a>
+            </li>
+            <li class="m-menu"><a href="#">
+                    <img src="./assets/images/chat.svg" width="25px" height="25px" alt="">
+                    <span>پشتیبانی</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+
+                </a>
+            </li>
+            <li class="m-menu"><a href="#">
+                    <img src="./assets/images/7.png" width="25px" height="25px" alt="">
+                    <span>تنظیمات</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+
+                </a>
+            </li>
+            <li class="m-menu"><a href="#">
+                    <img src="./assets/images/logout.svg" width="25px" height="25px" alt="">
+                    <span>خروج</span>
+                    <i class="fas fa-chevron-left d-block d-md-none"></i>
+
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- end::sidebar -->
+
+    <!-- begin::left sidebar -->
+    <aside class="left-sidebar">
+        <section>
+            <div class="col-12">
+                <a href="#" class="mt-3 d-block">
+                    <div class="coin-box">
+                        <div class="head">
+                            <span>بیت کوین</span>
+                            <span>BTC</span>
+                        </div>
+                        <div class="content">
+                            <div>
+                                <span>30000 $</span>
+
+                                <span class="percent">0.45 <i class="fas fa-arrow-up"></i></span>
+                            </div>
+                            <div class="crypto-img">
+                                <span><i class="cc BTC" title="BTC"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="mt-3 d-block">
+                    <div class="coin-box">
+                        <div class="head">
+                            <span>اتریوم</span>
+                            <span>ETH</span>
+                        </div>
+                        <div class="content">
+                            <div>
+                                <span>30000 $</span>
+
+                                <span class="percent">0.45 <i class="fas fa-arrow-up"></i></span>
+                            </div>
+                            <div class="crypto-img">
+                                <span><i class="cc ETH" title="ETH"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="mt-3 d-block">
+                    <div class="coin-box">
+                        <div class="head">
+                            <span>اتر</span>
+                            <span>USDT</span>
+                        </div>
+                        <div class="content">
+                            <div>
+                                <span>30000 $</span>
+
+                                <span class="percent">0.45 <i class="fas fa-arrow-up"></i></span>
+                            </div>
+                            <div class="crypto-img">
+                                <span><i class="cc USDT" title="USDT"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="mt-3 d-block">
+                    <div class="coin-box">
+                        <div class="head">
+                            <span>لایت کوین</span>
+                            <span>DASH</span>
+                        </div>
+                        <div class="content">
+                            <div>
+                                <span>30000 $</span>
+
+                                <span class="percent">0.45 <i class="fas fa-arrow-up"></i></span>
+                            </div>
+                            <div class="crypto-img">
+                                <span><i class="cc DASH" title="DASH"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </aside>
+    <!-- end::left sidebar -->
+    <!-- begin::main -->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <section class="main-content">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="mb-3">داشبورد</h2>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>ارز دیجیتال</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row brand-cards">
+                                            <div class="col-sm-6 col-lg-4 col-xl-2 px-1">
+                                                <div class="brand-card">
+                                                    <a href="m-trade.html">
+                                                        <div class="brand-card-header cursor-pointer bg-blue">
+                                                            <i class="cc BTC-alt"></i>
+                                                        </div>
+                                                        <div class="brand-card-body">
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    خرید
+                                                                </span>
+                                                                <span class="text-success">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    فروش
+                                                                </span>
+                                                                <span class="text-danger">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <hr class="horizontal-line">
+                                                        </div>
+                                                        <div class="brand-card-body bg-light">
+                                                            <div>
+                                                                <span>0 تومان</span>|<span>0 BTC</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>دارایی شما</span>
+                                                                <span>0</span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center ">
+                                                                <a href="#" class="btn btn-primary w-80 mt-3">معامله</a>
+                                                            </div>
+                                                        </div>
+
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 col-xl-2 px-1">
+                                                <div class="brand-card">
+                                                    <a href="m-trade.html">
+                                                        <div class="brand-card-header cursor-pointer bg-success"><i
+                                                                class="cc ETH-alt"></i>
+                                                        </div>
+                                                        <div class="brand-card-body">
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    خرید
+                                                                </span>
+                                                                <span class="text-success">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    فروش
+                                                                </span>
+                                                                <span class="text-danger">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <hr class="horizontal-line">
+                                                        </div>
+                                                        <div class="brand-card-body bg-light">
+                                                            <div>
+                                                                <span>0 تومان</span>|<span>0 BTC</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>دارایی شما</span>
+                                                                <span>0</span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center ">
+                                                                <a href="#" class="btn btn-primary w-80 mt-3">معامله</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 col-xl-2 px-1">
+                                                <div class="brand-card">
+                                                    <a href="m-trade.html">
+                                                        <div class="brand-card-header cursor-pointer bg-warning">
+                                                            <<i class="cc LTC-alt"></i>
+                                                        </div>
+                                                        <div class="brand-card-body">
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    خرید
+                                                                </span>
+                                                                <span class="text-success">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    فروش
+                                                                </span>
+                                                                <span class="text-danger">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <hr class="horizontal-line">
+                                                        </div>
+                                                        <div class="brand-card-body bg-light">
+                                                            <div>
+                                                                <span>0 تومان</span>|<span>0 BTC</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>دارایی شما</span>
+                                                                <span>0</span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center ">
+                                                                <a href="#" class="btn btn-primary w-80 mt-3">معامله</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 col-xl-2 px-1">
+                                                <div class="brand-card">
+                                                    <a href="m-trade.html">
+                                                        <div class="brand-card-header cursor-pointer bg-danger"><i
+                                                                class="cc USDT"></i></div>
+                                                        <div class="brand-card-body">
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    خرید
+                                                                </span>
+                                                                <span class="text-success">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    فروش
+                                                                </span>
+                                                                <span class="text-danger">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <hr class="horizontal-line">
+                                                        </div>
+                                                        <div class="brand-card-body bg-light">
+                                                            <div>
+                                                                <span>0 تومان</span>|<span>0 BTC</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>دارایی شما</span>
+                                                                <span>0</span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center ">
+                                                                <a href="#" class="btn btn-primary w-80 mt-3">معامله</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 col-xl-2 px-1">
+                                                <div class="brand-card">
+                                                    <a href="m-trade.html">
+                                                        <div class="brand-card-header cursor-pointer bg-secondary"><i
+                                                                class="cc XRP-alt"></i></div>
+                                                        <div class="brand-card-body">
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    خرید
+                                                                </span>
+                                                                <span class="text-success">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    فروش
+                                                                </span>
+                                                                <span class="text-danger">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <hr class="horizontal-line">
+                                                        </div>
+                                                        <div class="brand-card-body bg-light">
+                                                            <div>
+                                                                <span>0 تومان</span>|<span>0 BTC</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>دارایی شما</span>
+                                                                <span>0</span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center ">
+                                                                <a href="#" class="btn btn-primary w-80 mt-3">معامله</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 col-xl-2 px-1">
+                                                <div class="brand-card">
+                                                    <a href="m-trade.html">
+                                                        <div class="brand-card-header cursor-pointer bg-blue"><i
+                                                                class="cc BTC-alt"></i></div>
+                                                        <div class="brand-card-body">
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    خرید
+                                                                </span>
+                                                                <span class="text-success">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                            <div>
+                                                                <span class="text-uppercase text-muted small">
+                                                                    فروش
+                                                                </span>
+                                                                <span class="text-danger">
+                                                                    23000 تومان
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <hr class="horizontal-line">
+                                                        </div>
+                                                        <div class="brand-card-body bg-light">
+                                                            <div>
+                                                                <span>0 تومان</span>|<span>0 BTC</span>
+                                                            </div>
+                                                            <div>
+                                                                <span>دارایی شما</span>
+                                                                <span>0</span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center ">
+                                                                <a href="#" class="btn btn-primary w-80 mt-3">معامله</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="card buy-sell mt-3">
+
+                                    <div class="card-body bg-primary">
+                                        <div class="header">
+                                            <h3>با شبکس در کمترین زمان خرید و فروش کنید</h3>
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
+                                                        href="#pills-home" role="tab" aria-controls="pills-home"
+                                                        aria-selected="true">فروش به شبکس</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill"
+                                                        href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                                        aria-selected="false">خرید از شبکس</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
+                                                <form action="#" method="post">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="buy-sell-details">
+                                                                <ul>
+                                                                    <li><span>ریت تبادل</span><span>15000 تومان</span>
+                                                                    </li>
+                                                                    <li><span>نوع تبادل</span><span>خرید از ما</span>
+                                                                    </li>
+                                                                    <li><span>زمان تقریبی</span><span>فوری</span></li>
+                                                                    <li><span>وضعیت خرید</span><span
+                                                                            class="text-success">فوری</span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 ">
+
+                                                            <div class="position-relative mb-3">
+                                                                <select class="custom-select col-3"
+                                                                    style="position: absolute;background-color: #0c385e;color: white;">
+                                                                    <option selected>BTC</option>
+                                                                    <option value="1">One</option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                                <input type="text" class="form-control amount"
+                                                                    style="padding-left: 4rem;padding-right: 8rem;">
+                                                                <span>میگیرد</span>
+                                                            </div>
+                                                            <div>
+                                                                <i class="fas fa-exchange-alt"></i>
+                                                            </div>
+                                                            <div class="position-relative mt-3">
+                                                                <span class="currency">تومان <i
+                                                                        class="fas fa-money-bill"></i></span>
+                                                                <input type="text" class="form-control amount"
+                                                                    style="padding-left: 4rem;padding-right: 8rem;">
+                                                                <span>میگیرد</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-md-12 mt-5">
+                                                            <button class="btn btn-block btn-primary">شروع
+                                                                معامله</button>
+                                                        </div>
+
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                </section>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- end::main -->
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/vendors/FontAwesome/all.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
